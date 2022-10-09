@@ -1,35 +1,31 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { View } from 'react-native';
+import { colors } from './constants';
+import Header from './src/components/Header';
+import Footer from './src/components/Footer';
+import Buttons from './src/components/Buttons';
+import Balance from './src/components/Balance';
+import QuickTransfer from './src/components/QuickTransfer';
+
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.Text}>yoyo</Text>
-      <StatusBar style="auto" />
-      <View style={upblock.container}>
-        <Text>img</Text>
+    <View style={{
+      padding: 24,
+      paddingTop: 55,
+      paddingBottom: 250,
+      backgroundColor: '#f7f5f0',
+    }}>
+      <View style={{height: '100%'}}>
+        <Header />
+        <Buttons />
+        <Balance />
       </View>
+      <QuickTransfer />
+      <Footer />
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#f7f5f0',
-  },
-  Text: {
-    color: 'black',
-    fontSize: 20,
-  },
-});
-const upblock = StyleSheet.create({
-  container: {
-    height: 80,
-  },
-  Image: {
-    height: 200,
-    width: 200,
-  },
-});
+
