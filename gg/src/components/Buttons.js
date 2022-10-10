@@ -15,27 +15,27 @@ const card = [
 const Buttons = () => {
     const {user} = useAuth()
     return(
-        <View style={{marginVertical: 60, position: 'relative', height: 250,}}>
+        <View style={{marginVertical: 40, position: 'relative',}}>
             {
                 card.map(card => (
                     <View key={card.id} style={{
                         backgroundColor: 'white', 
                         borderRadius: 20, 
-                        padding: 40, 
+                        padding: 20, 
                         ...styles.boxShadow, }}>
                         <Image
                             source={require('../images/chip.png')}
-                            style={{ width: 50, height: 50,}}/>
-                        <Text style={{ color: 'black', fontSize: 32, marginVertical: 30,}}>{card.number}</Text>
+                            style={{ width: 32, height: 32, }}/>
+                        <Text style={{ color: 'black', fontSize: 22, marginVertical: 15,}}>{card.number}</Text>
                         <View style={{...styles.flexDefault, }}>
                             <View>
-                                <Text style={{ color: 'black', textTransform: 'uppercase', fontSize: 12, marginBottom: 6,}}>Card owner</Text>
-                                <Text style={{ color: 'black', fontSize: 18,}}>{user.name}</Text>
+                                <Text style={{ color: 'black', textTransform: 'uppercase', fontSize: 10, marginBottom: 6,}}>Card owner</Text>
+                                <Text style={{ color: 'black', fontSize: 16,}}>{user.name}</Text>
                             </View>
                             <View>
                                 <Image
                                     source={require('../images/Visa.png')}
-                                    style={{ width:86, height: 45, }}/>
+                                    style={{ width:63, height: 35, }}/>
                             </View>
                         </View>
                     </View>

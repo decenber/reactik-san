@@ -14,7 +14,7 @@ export default function App() {
     <View style={{
       padding: 24,
       paddingTop: 55,
-      paddingBottom: 250,
+      paddingBottom: 220,
       backgroundColor: '#f7f5f0',
     }}>
       <View style={{height: '100%'}}>

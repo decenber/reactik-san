@@ -6,17 +6,17 @@ import { styles } from "../../constants";
 const Footer = () => {
     return(
             <View style={{...styles.flexDefault}}>
-                <View style={{ width: 150, alignItems: 'center' }}>
-                    <Icon name='home' size={30} color='900'/>
-                    <Text>Главная страница</Text>
+                <View style={{ width: 100, alignItems: 'center' }}>
+                    <Icon name='home' size={20} color='900'/>
+                    <Text style={{ fontSize: 10 }}>Главная страница</Text>
                 </View>
-                <View style={{ width: 150, alignItems:'center' }}>
-                    <Icon name='dollar' size={30} color='900'/>
-                    <Text>Платежи</Text>
+                <View style={{ width: 100, alignItems:'center' }}>
+                    <Icon name='dollar' size={20} color='900'/>
+                    <Text style={{ fontSize: 10 }}>Платежи</Text>
                 </View>
-                <View style={{ width: 150, alignItems: 'center' }}>
-                    <Icon name='credit-card' size={30} color='900'/>
-                    <Text>Счет</Text>
+                <View style={{ width: 100, alignItems: 'center' }}>
+                    <Icon name='credit-card' size={20} color='900'/>
+                    <Text style={{ fontSize: 10 }}>Счет</Text>
                 </View>
             </View>
     )
